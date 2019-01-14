@@ -1,3 +1,4 @@
+vipsidecar，专门用于解决公有云体系内vip漂移监控。
 使用方面vipsidecar遵循简洁原则，只需要编写配置文件然后启动即可，我们先看看配置文件的格式
 config.yaml
 ```
@@ -26,6 +27,7 @@ localnetworkinterface:
 |vips|vip列表|
 |allnetworkinterfaces|各个节点上所有可能绑定vip的portid,相关信息可以在控制台查询|
 |localnetworkinterface|本机用于绑定vip的网络设备pordid|
+|pollinginterval|轮询间隔时间不低于5秒|
 
 * 测试方法
 * 京东云申请两台云主机，并保证两台主机可以访问公网，并绑定弹性网卡，此时每台云主机上应该有两块网卡(eth0、eth1),eth1为弹性网卡。
@@ -33,6 +35,7 @@ localnetworkinterface:
 ```
 accessskeyid: your_ak
 accesskeysecret: your_sk
+pollinginterval: 20
 vips: 
 - vip1
 - vip2

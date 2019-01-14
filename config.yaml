@@ -1,6 +1,6 @@
-accessskeyid: 4107B314B15BCE99A1C781DFCF119F59
-accesskeysecret: 8877CD432EB5738EFF0FA01F630201C9
-pollinginterval: 4
+accessskeyid: 4107B3xxxxCE99A1C781xxxx59
+accesskeysecret: 8877CxxxxxEB5738EFxxx0201C9
+pollinginterval: 40
 vips: 
 - 10.0.0.30
 - 10.0.0.11
@@ -8,11 +8,11 @@ vips:
 - 192.168.1.50
 allnetworkinterfaces: 
 - rangid: cn-east-2
-  networkinterfaceid: port-fet9c4pvzt
+  networkinterfaceid: likeport-fet9c4pvzt
 - rangid: cn-east-2
-  networkinterfaceid: port-pig3p7864x
+  networkinterfaceid: likeport-pig3p7864x
 
 localnetworkinterface: 
   rangid: cn-east-2
-  networkinterfaceid: port-fet9c4pvzt
+  networkinterfaceid: likeport-fet9c4pvzt
 
